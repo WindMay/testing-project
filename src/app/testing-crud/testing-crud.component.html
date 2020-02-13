@@ -1,0 +1,6 @@
+<div id="user-content" *ngIf="!loading else loadingTemplate">
+  {{user | json}}
+</div>
+<ng-template #loadingTemplate>
+  Loading...
+</ng-template>

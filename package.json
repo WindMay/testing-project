@@ -1,6 +1,7 @@
 {
   "name": "testing-project",
   "version": "0.0.0",
+  "author": "Robert Steelheart",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
