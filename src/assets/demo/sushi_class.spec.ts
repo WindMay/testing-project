@@ -7,17 +7,21 @@ describe('SushiMaker Class', () => {
 
   // Before Each
   beforeEach(() => {
+    console.log('--------Antes de cada Test---------');
     console.log('preparativos de nuestra sushi maker');
     sushiMaker = new SushiMakerClass('kanikama', 'nogiri');
+    console.log('-----------------------------------');
   });
 
   // After Each
 
   afterEach(() => {
+    console.log('--------Despues de cada Test---------');
     console.log('terminamos de usar nuestra sushi maker es hora de limpiarla');
     sushiMaker = null;
     console.log('Estado de nuesra variable a la que haciamos referencia con la sushi maker');
     console.log(sushiMaker);
+    console.log('-----------------------------------');
   });
 
 
