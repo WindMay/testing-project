@@ -42,7 +42,7 @@ export type PartialResponse<T> = HttpResponse<Partial<T>>;
  */
 
 export const DEFAULT_FAKE_API_CONFIG: IBaseFakeApiConfig = {
-  responseDelay: 2000,
+  responseDelay: 5000,
   randomResponseTime: false
 };
 

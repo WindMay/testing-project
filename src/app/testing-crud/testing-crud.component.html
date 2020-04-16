@@ -1,6 +1,13 @@
+<div>Request Normal</div>
 <div id="user-content" *ngIf="!loading else loadingTemplate">
   {{user | json}}
 </div>
+
+<div>Request Normal</div>
+<div id="users-content" *ngIf="users else loadingTemplate">
+  {{users | json}}
+</div>
+
 <ng-template #loadingTemplate>
   Loading...
 </ng-template>
