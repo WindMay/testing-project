@@ -30,13 +30,13 @@ describe('SushiMaker Class', () => {
     expect(sushiMaker).toBeTruthy();
   });
 
-  it('Preparar Sushi should\'ve been called whit given params', () => {
+  it('Preparar Sushi should\'ve been called with given params', () => {
     spyOn(sushiMaker, 'prepararSushi').and.callThrough();
     sushiMaker.prepararSushi('palta', 'lechuga');
     expect(sushiMaker.prepararSushi).toHaveBeenCalledWith('palta', 'lechuga');
   });
 
-  it('Preparar Sushi should return a custom sushi when called whit params , Normal', () => {
+  it('Preparar Sushi should return a custom sushi when called with params , Normal', () => {
     const returnedValueIntercepted = sushiMaker.prepararSushi('palta', 'lechuga');
     expect(returnedValueIntercepted).toEqual({
       arroz: 'arroz blanco con un toque de vinagre',
@@ -45,7 +45,7 @@ describe('SushiMaker Class', () => {
     });
   });
 
-  it('Preparar Sushi should return a custom sushi when called whit params, Intercepted', () => {
+  it('Preparar Sushi should return a custom sushi when called with params, Intercepted', () => {
     spyOn(sushiMaker, 'prepararSushi').and.callFake((param1, param2) => {
       console.log('params got on our interception');
       console.log(param1 , '  - ', param2);
